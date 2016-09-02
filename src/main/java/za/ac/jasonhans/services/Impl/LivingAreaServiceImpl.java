@@ -154,7 +154,14 @@ public class LivingAreaServiceImpl implements LivingAreaService{
 
     @Override
     public LivingArea readById(Long aLong) {
-        return null;
+        try{
+            return repository.findOne(aLong);
+        }
+        catch(Exception x)
+        {
+            x.printStackTrace();
+            return null;
+        }
     }
 
     @Override

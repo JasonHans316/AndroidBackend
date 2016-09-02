@@ -1,6 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
   <data-source name="MySQL - tempstore@localhost" uuid="fce067e7-7d61-4ac6-9468-3607dea682f4">
-    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+    <database-info product="MySQL" version="5.7.11" jdbc-version="4.1" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-6.0.3 ( Revision: 9fb85a76ccb7506157e668f1516464a46e317d4a )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="tempstore"/>
+      <table id="2" parent="1" name="animal"/>
+      <table id="3" parent="1" name="living_area"/>
+      <table id="4" parent="1" name="temptable"/>
+      <table id="5" parent="1" name="mine"/>
+      <column id="6" parent="2" name="animal_id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="7" parent="2" name="adoption">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="8" parent="2" name="age">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="9" parent="2" name="breed">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="10" parent="2" name="name">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="11" parent="2" name="schedules">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="12" parent="2" name="space_required">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="13" parent="2" name="weight">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="14" parent="2" name="PRIMARY">
+        <columns>animal_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="15" parent="3" name="living_area_id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="16" parent="3" name="active">
+        <mandatory>1</mandatory>
+        <data-type>bit(1)</data-type>
+      </column>
+      <column id="17" parent="3" name="animal_id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="18" parent="3" name="code">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="19" parent="3" name="name">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="20" parent="3" name="space_available">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="21" parent="3" name="PRIMARY">
+        <columns>living_area_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="22" parent="4" name="tempID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="23" parent="4" name="code">
+        <mandatory>1</mandatory>
+        <data-type>varchar(5)</data-type>
+      </column>
+      <column id="24" parent="4" name="name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="25" parent="4" name="size">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="26" parent="4" name="PRIMARY">
+        <columns>tempID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="27" parent="5" name="A">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="28" parent="5" name="PRIMARY">
+        <columns>A</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
   </data-source>
 </component>
